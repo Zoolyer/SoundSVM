@@ -14,7 +14,7 @@ rightfiles_path = "./data/Sound/"
 # 环境声音文件地址
 envfiles_path = "./data/SoundBG/"
 # 模型文件保存地址
-modle_path = "./data/data/model/"
+modle_path = "./data/model/"
 # 保存的模型名称（英文）
 modle_name = 'svm_model'
 # 最大声音长度（视频声音越长该值越大，若检测音频时间长于训练音频则增大该值）
@@ -79,6 +79,7 @@ for Env_0 in Envs_0:
     if Soundlen_max < Env_0.shape[1]:
         Soundlen_max = Env_0.shape[1]
 
+print(f"最大声音长度（特征长度）：{Soundlen_max}")
 
 
 # 正确声音入集
