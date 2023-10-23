@@ -10,11 +10,11 @@ import pickle
 import joblib
 
 # 正确声音文件地址C:\Users\小山\Desktop\Sound
-rightfiles_path = "C:/Users/小山/Desktop/Sound/"
+rightfiles_path = "./data/Sound/"
 # 环境声音文件地址
-envfiles_path = "C:/Users/小山/Desktop/SoundBG/"
+envfiles_path = "./data/SoundBG/"
 # 模型文件保存地址
-modle_path = "D:/TTV-DCMA-09B/data/model/"
+modle_path = "./data/data/model/"
 # 保存的模型名称（英文）
 modle_name = 'svm_model'
 # 最大声音长度（视频声音越长该值越大，若检测音频时间长于训练音频则增大该值）
